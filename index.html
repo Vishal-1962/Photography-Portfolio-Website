@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Jadhav Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-900 text-zinc-100 overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-zinc-900/70 backdrop-blur-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold tracking-wider text-white">Vishal Jadhav</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="hamburger-button" class="md:hidden z-50">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <nav id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-2/3 max-w-sm h-full bg-zinc-900 z-40 flex flex-col items-center justify-center md:hidden">
+        <div class="flex flex-col space-y-8 text-2xl text-center">
+            <a href="#home" class="nav-link-mobile">Home</a>
+            <a href="#portfolio" class="nav-link-mobile">Portfolio</a>
+            <a href="#about" class="nav-link-mobile">About</a>
+            <a href="#contact" class="nav-link-mobile">Contact</a>
+        </div>
+    </nav>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/50 z-30 hidden md:hidden"></div>
+
+    <main>
+        <section id="home" class="relative h-screen w-full flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('photos/homepage.jpeg');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 p-6">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight fade-in-up" style="animation-delay: 0.2s;">Capturing Moments, Creating Art</h1>
+                <p class="text-lg md:text-xl text-zinc-300 mb-8 fade-in-up" style="animation-delay: 0.4s;">Adding some magic to my memories,and I can add magic to yours too if you want !</p>
+                <a href="#portfolio" class="inline-block bg-white text-zinc-900 font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 hover:scale-105 fade-in-up" style="animation-delay: 0.6s;">View Portfolio</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 md:py-28 bg-zinc-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">My Work</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic6.jpeg" alt="A Ganesh idol" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">Ganesh Idol</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic8.jpg" alt="A butterfly" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">Spider</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic10.jpeg" alt="Bird" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">Bird</h3>
+                        </div>
+                    </div>
+
+                      <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic2.jpg" alt="WildLife" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">WildLife</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic3.jpg" alt="Festivels" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">Festivels</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic1.jpg" alt="Raigad" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">Raigad</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic9.jpeg" alt="WildLife" class="w-full h-full object-cover transition-transform duration-100 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">WildLife</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic5.jpg" alt="Animals" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">Animals</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-lg aspect-w-1 aspect-h-1">
+                        <img src="photos/pic11.jpg" alt="First Click" class="w-full h-full object-cover transition-transform duration-500 group-hover-scale">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-semibold">First Click</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-28 bg-zinc-800">
+            <div class="container mx-auto px-6 grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <img src="photos/pic14.jpg" alt="My Self" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">About Me</h2>
+                    <p class="text-zinc-300 mb-4 leading-relaxed">Hello! I'm Vishal Jadhav, I believe that every photo tells a story, and my passion lies in capturing those unique narratives. My work is a blend of natural wonder and quiet moments, exploring the beauty found in both grand landscapes and the smallest details of everyday life. Each image is an invitation to pause, reflect, and see the world through a new lens. It's a journey I'm thrilled to share with you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-28">
+            <div class="container mx-auto px-6 max-w-lg text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Let's Talk</h2>
+                <p class="text-zinc-400 mb-8">Have a project in mind, a story to tell, or just want to say hello? I'd love to hear from you. Please fill out the form below.</p>
+                <form id="contact-form" class="space-y-6 text-left">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 bg-white text-black border border-black rounded-md focus:ring-2 focus:ring-zinc-500 focus:outline-none transition">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 bg-white text-black border border-black rounded-md focus:ring-2 focus:ring-zinc-500 focus:outline-none transition">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full p-3 bg-white text-black border border-black rounded-md focus:ring-2 focus:ring-zinc-500 focus:outline-none transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 px-6 bg-white text-zinc-900 font-bold rounded-md transition-transform duration-300 hover:scale-105">Send Message</button>
+                </form>
+                <div id="success-message" class="mt-6 p-4 bg-green-500/10 text-green-300 rounded-md hidden">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-900 border-t border-zinc-800 py-8">
+        <div class="container mx-auto px-6 text-center text-zinc-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <p class="text-zinc-300 mb-4 leading-relaxed">For more visit my instagram page.</p>
+                <a href="https://www.instagram.com/clickstarclick_vj?igsh=eGRqZHV4bmEzZm9s" target="_blank" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </div>
+            <p class="text-sm">&copy; Vishal Jadhav Photography.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
